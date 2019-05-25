@@ -26,7 +26,7 @@
  .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid lightgrey;
+  border: 1px solid silver;
 }
 .länk {
   text-align: center;
@@ -49,7 +49,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 @media only screen and (max-width: 1200px) {
   .grid {
   grid-template-columns: 1fr 1fr;
-  border: 1px solid lightgrey;
+  border: 1px solid silver;
 }
   .bilder {
     text-align: center;
@@ -61,7 +61,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 @media only screen and (max-width: 800px) {
   .grid {
   grid-template-columns: 1fr;
-  border: 1px solid lightgrey;
+  border: 1px solid silver;
 
 }
 
@@ -86,7 +86,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   @media only screen and (max-width: 320px) {
     .grid {
     grid-template-columns: 1fr;
-    border: 1px solid lightgrey;
+    border: 1px solid silver;
     }
   
     .App {
@@ -105,7 +105,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
      .grid {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      border: 2px solid lightgrey;
+      border: 2px solid silver;
       
     
     }
@@ -129,7 +129,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     @media only screen and (max-width: 1200px) {
       .grid {
       grid-template-columns: 1fr 1fr;
-      border: 2px solid lightgrey;
+      border: 2px solid silver;
     }
       .bilder {
         text-align: center;
@@ -142,7 +142,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     @media only screen and (max-width: 800px) {
       .grid {
       grid-template-columns: 1fr;
-      border: 2px solid lightgrey;
+      border: 2px solid silver;
     
     }
   
@@ -162,7 +162,7 @@ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
       @media only screen and (max-width: 320px) {
         .grid {
         grid-template-columns: 1fr;
-        border: 2px solid lightgrey;
+        border: 2px solid silver;
         }
       
       .bilder {
