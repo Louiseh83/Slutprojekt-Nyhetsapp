@@ -1,0 +1,194 @@
+.App {
+  text-align: center;
+  padding: 1px;
+  background-color: lightblue;
+}
+
+.App-header {
+  text-align: center;
+  margin: 3px;
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border: 3px dashed black;
+  background-color: white;
+ }
+
+ .App-footer {
+  border: 3px dashed black;
+  background-color: white;
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin: 3px;
+}
+
+
+ .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid lightgrey;
+}
+.länk {
+  text-align: center;
+ 
+}
+.bilder {
+text-align: center;
+width: 200px;
+height: 150px;
+padding: 35px;
+}
+
+.rubriker {
+text-align: center;
+font-size: 15px;
+font-weight: bold;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid {
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid lightgrey;
+}
+  .bilder {
+    text-align: center;
+    width: 400px;
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .grid {
+  grid-template-columns: 1fr;
+  border: 1px solid lightgrey;
+
+}
+
+.App-header {
+  text-align: center;
+  font-size: 1em;
+  border: 2px dashed black;
+}
+
+  .bilder {
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+  }
+
+  .rubriker {
+    text-align: center;
+    font-size: 14px;
+  }
+}
+  @media only screen and (max-width: 320px) {
+    .grid {
+    grid-template-columns: 1fr;
+    border: 1px solid lightgrey;
+    }
+  
+    .App {
+      text-align: center;
+      background-color: lightblue;
+      padding: 2px;
+    }
+    
+    .App-header {
+      text-align: center;
+      font-size: 1em;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      border: 2px dashed black;
+     }
+    
+     .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: 2px solid lightgrey;
+      
+    
+    }
+    .länk {
+      text-align: center;
+     
+    }
+    .bilder {
+    text-align: center;
+    width: 470px;
+    height: 200 px;
+    }
+    
+    .rubriker {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    @media only screen and (max-width: 1200px) {
+      .grid {
+      grid-template-columns: 1fr 1fr;
+      border: 2px solid lightgrey;
+    }
+      .bilder {
+        text-align: center;
+        width: 400px;
+        height: 200px;
+        margin: 10px;
+      }
+    }
+    
+    @media only screen and (max-width: 800px) {
+      .grid {
+      grid-template-columns: 1fr;
+      border: 2px solid lightgrey;
+    
+    }
+  
+    
+      .bilder {
+        text-align: center;
+        width: 200px;
+        height: 100px;
+        margin: 10px;
+      }
+    
+      .rubriker {
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+      @media only screen and (max-width: 320px) {
+        .grid {
+        grid-template-columns: 1fr;
+        border: 2px solid lightgrey;
+        }
+      
+      .bilder {
+        text-align: center;
+        width: 100px;
+        height: 50px;
+        margin: 10px;
+      }
+      
+      .rubriker {
+        text-align: center;
+        font-size: 10px;
+      }
+      
+    }
+      
+   .bilder {
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .rubriker {
+    text-align: center;
+    font-size: 10px;
+  }
+  
+}
