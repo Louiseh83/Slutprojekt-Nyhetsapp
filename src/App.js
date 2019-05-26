@@ -56,8 +56,8 @@ return (
 
           {
             user
-              ? <button onClick={signOut}>Sign out</button> // När man klickar på ett objekt
-              : <button onClick={signInWithGoogle}>Sign in with Google</button> // När man klickar på ett objekt
+              ? <button onClick={signOut}>Sign out</button> // En knapp som visar vad som händer när man klickar på den
+              : <button onClick={signInWithGoogle}>Sign in with Google</button> // En knapp som visar vad som händer när man klickar på den
           }
   </div>
 <h1>The latest News</h1>
