@@ -75,7 +75,7 @@ Designed by: Louise Hjelström - 2019
 );
 }
 }
-
+// Ett vanligt meddelande
 const firebaseAppAuth = firebaseApp.auth();
 
 const providers = {
