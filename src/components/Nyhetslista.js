@@ -7,7 +7,7 @@ Funktionen består av en samling satser och vad de ska göra. */
 function Nyhetslista(props) { 
    return (<section className="grid">
       {props.minaArtiklar.map(function (item, index) {
-         return <Nyhetsartikel // Man ber funktionen att bearbeta datan från nyhetsartiklarna och skickar sedan tillbaka dessa. 
+         return <Nyhetsartikel // Med instruktionen return ber man funktionen att bearbeta datan från nyhetsartiklarna och skickar sedan tillbaka dessa. 
           minArtikel={item} 
           key={`artikel${index}`}
           />
