@@ -56,8 +56,8 @@ return (
 
           {
             user
-              ? <button onClick={signOut}>Sign out</button> // En knapp som visar vad som händer när man klickar på den
-              : <button onClick={signInWithGoogle}>Sign in with Google</button> // En knapp som visar vad som händer när man klickar på den
+              ? <button onClick={signOut}>Sign out</button> // En knapp som visar att man kan logga ut när man klickar på den
+              : <button onClick={signInWithGoogle}>Sign in with Google</button> // En knapp som visar att du kan logga in med Google när du klickar på den
           }
   </div>
 <h1>The latest News</h1>
@@ -75,7 +75,7 @@ Designed by: Louise Hjelström - 2019
 );
 }
 }
-// Ett vanligt meddelande
+
 const firebaseAppAuth = firebaseApp.auth();
 
 const providers = {
