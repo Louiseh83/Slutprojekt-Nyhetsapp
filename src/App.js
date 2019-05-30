@@ -4,7 +4,8 @@ import * as firebase from 'firebase/app';
 import 'firebase/auth';
 import firebaseConfig from './firebaseConfig';
 import './App.css';
-import Nyhetslista from './components/Nyhetslista'
+import Nyhetslista from './components/Nyhetslista' /* Man skriver ./ där . betyder att man börjar i den mappen man står i. 
+/ betyder att man vill gå ner i en annan mapp. */
 
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
