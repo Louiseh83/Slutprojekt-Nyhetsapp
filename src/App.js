@@ -51,7 +51,7 @@ return (
   <div>
   {
             user
-              ? <p>Hello, {user.displayName}</p>
+              ? <p>Hello, {user.displayName}</p> // När du är inloggad visas ditt namn på skärmen
               : <p>Sign in here</p>
           }
 
