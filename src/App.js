@@ -33,7 +33,7 @@ men man kan inte garantera vad det blir. Man kan låtsas att det funkar och seda
 .then(function (response) { /* När man har gjort en förfrågan från fetch-api och fått någon form av data tillbaka, då vill man göra någonting med den datan, 
   då skriver man in .then och sedan vill man ha en funktion som gör något med det första datat som kommer tillbaka, 
   så då skriver man in (function(response) */
-if (response.status !==200) {
+if (response.status !==200) { // Denna funktionen används om status inte är 200, dvs inte gick bra, så vill man tala om att man fick tillbaka en annan status från servern.
 throw Error( `status:${response.status}`);
 }
 
@@ -42,11 +42,11 @@ return response.json() // Man gör något med den datan som kommer tillbaka.
 this.setState({ articles: jsondata.articles }) /* Den här funktionen, setState, anropas med ett objekt, 
 sen uppdaterar den det som ligger i State med det som ligger i det objektet som vi skickar in, 
 i det här fallet jsondata.articles. */
-}).catch(error =>{ 
+}).catch(error =>{ // catch används för att fånga upp fel som kan uppstå. 
 this.setState({ 
 articles: [{
 urlToImage: "fejk.jpg",
-description: "Något gick fel. $(error.message)",
+description: "Något gick fel. $(error.message)", // Om något skulle gå fel med den här appen så kommer det här meddelandet att dyka upp.
 }]
 });
 })
