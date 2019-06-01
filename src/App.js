@@ -19,8 +19,8 @@ class App extends Component { /* En class är en speciell typ av objekt.
 constructor(props) { /* Constructor bygger objektet, i det här fallet Appen,
   med alla komponenter som den innehåller, samt all data (props)*/ 
 super(props); // Kör den constructorn som finns i components.
-this.state = { // State är tillståndet för just den här komponenten eftersom man skriver this.state.
-articles: []}; // I det här fallet är det Articles som är komponenten.
+this.state = { // State håller reda på saker som man ska kunna använda längre ner i appen.
+articles: []}; // Här är det 'articles' som är objektet.
 }
 
 componentDidMount() { /* Den här funktionen innebär att när appen är färdig då ska den här funktionen köras och det är då man kan hämta data ifrån nätet. 
@@ -28,13 +28,15 @@ componentDidMount() { /* Den här funktionen innebär att när appen är färdig
 fetch("https://newsapi.org/v2/top-headlines?country=se&category=entertainment&apiKey=b61b0d0a09194ae591b9f3253b0ac8e7")
 /* Med fetch-api som man använder för att hämta data på nätet så får man ingen data från början, 
 utan man får vänta och se ifall man får tillbaka någon data överhuvudtaget och då får man se om det man fick isåfall var 
-det som vi faktiskt ville ha. Man kallar det för ett "promise", ett löfte om att man får någon data, 
+det som man faktiskt ville ha. Man kallar det för ett "promise", ett löfte om att man får någon data, 
 men man kan inte garantera vad det blir. Man kan låtsas att det funkar och sedan ta hand om eventuella fel som uppstår ifall det inte funkar. */
 .then(function (response) { /* När man har gjort en förfrågan från fetch-api och fått någon form av data tillbaka, då vill man göra någonting med den datan, 
   då skriver man in .then och sedan vill man ha en funktion som gör något med det första datat som kommer tillbaka, 
   så då skriver man in (function(response) */
 if (response.status !==200) { // Denna funktionen används om status inte är 200, dvs inte gick bra, så vill man tala om att man fick tillbaka en annan status från servern.
-throw Error( `status:${response.status}`);
+throw Error( `status:${response.status}`); /* Med hjälp av 'throw Error' skapar man sitt eget felmeddelande. 
+Sen kan man skriva sitt eget felmeddelande, exempelvis om det inte är rätt status. 
+Då skriver man in 'response.status' så man verkligen visar vad det är för status. */
 }
 
 return response.json() // Man gör något med den datan som kommer tillbaka.
@@ -52,7 +54,7 @@ description: "Något gick fel. $(error.message)", // Om något skulle gå fel me
 })
 }
 
-render() {
+render() { // Det här är en funktion som gör att Firebase ska kunna fungera
   const {
     user,
     signOut,

@@ -5,17 +5,17 @@ Den här funktionen består av olika satser och de används på olika sätt. */
 function Nyhetsartikel (props){
     return ( 
       <div className="grid"> 
-            <article>
+        <article>
         <img src={props.minArtikel.urlToImage} className="bilder" alt=""></img>
       <h2 className="rubriker">{props.minArtikel.title}</h2>
       <p>{props.minArtikel.description}</p>
       <a href={props.minArtikel.url}  target="">Läs mer..</a>
-        </article> 
-        </div>
-      /* Inuti article-taggen finns alla nyhetsartiklar med rubriker, bilder, 
-      beskrivningar samt en länk där man kan läsa mer ingående om de olika artiklarna. */
-    ); 
-    }
+    </article> 
+  </div>
+  /* Inuti article-taggen finns alla nyhetsartiklar med rubriker, bilder, 
+  beskrivningar samt en länk där man kan läsa mer ingående om de olika artiklarna. */
+  ); 
+}
 
 
 export default Nyhetsartikel; /* För att man ska kunna importera Nyhetsartikeln 
