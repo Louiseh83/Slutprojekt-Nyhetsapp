@@ -13,7 +13,8 @@ function Nyhetsartikel (props){
     </article> 
   </div>
   /* Inuti article-taggen finns alla nyhetsartiklar med rubriker, bilder, 
-  beskrivningar samt en länk där man kan läsa mer ingående om de olika artiklarna. */
+  beskrivningar samt en länk där man kan läsa mer ingående om de olika artiklarna. Detta är
+  en funktion som returneras. */
   ); 
 }
 

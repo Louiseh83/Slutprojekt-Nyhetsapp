@@ -6,8 +6,8 @@ import Nyhetsartikel from './Nyhetsartikel';
 Funktionen består av en samling satser och vad de ska göra. */
 function Nyhetslista(props) { 
    return (<section className="grid">
-      {props.minaArtiklar.map(function (item, index) { /* När man använder "map" får man två saker som map skickar in till den funktionen som man skriver inuti "map". 
-      Man får själva föremålet (item) och (index) för föremålet. */
+      {props.minaArtiklar.map(function (item, index) { /* När man använder "map" får man två saker som map skickar in 
+      till den funktionen som man skriver inuti "map". Man får själva föremålet (item) och (index) för föremålet. */
          return <Nyhetsartikel /* Med instruktionen return ber man om att bearbeta datan från nyhetsartiklarna och returnerar sedan dessa, 
          alltså nyhetsartiklarna.*/ 
           minArtikel={item} // minArtikel är attributet som man skickar in och så lägger man in en "item", dvs. själva objektet som också ska in.

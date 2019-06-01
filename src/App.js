@@ -44,8 +44,8 @@ return response.json() // Man gör något med den datan som kommer tillbaka.
 this.setState({ articles: jsondata.articles }) /* Den här funktionen, setState, anropas med ett objekt, 
 sen uppdaterar den det som ligger i State med det som ligger i det objektet som vi skickar in, 
 i det här fallet jsondata.articles. */
-}).catch(error =>{ // catch används för att fånga upp fel som kan uppstå. 
-this.setState({ 
+}).catch(error =>{ // catch används för att fånga upp fel som kan uppstå med setState.
+this.setState({ // setState används bara om man får något svar tillbaka från objektet som i det här fallet är articles, om man inte har gjort något fel. 
 articles: [{
 urlToImage: "fejk.jpg",
 description: "Något gick fel. $(error.message)", // Om något skulle gå fel med den här appen så kommer det här meddelandet att dyka upp.
@@ -93,9 +93,11 @@ Designed by: Louise Hjelström - 2019
 }
 }
 
+
+// En funktion som används för att kunna identifiera firebaseAppen.
 const firebaseAppAuth = firebaseApp.auth();
 
-const providers = {
+const providers = { // En funktion där Google fungerar som en leverantör för att kunna indentifiera Firebase. 
   googleProvider: new firebase.auth.GoogleAuthProvider(),
 };
 
